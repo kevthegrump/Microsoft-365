@@ -1,5 +1,6 @@
-#Create new Mailuser for using Native tools to migrate mailboxes between tenant.
+# Create new Mailuser for using Native tools to migrate mailboxes between tenants.
 # Mail user object used as "destination" object onto which the source mailbox is copied/attached
+
 #Set Variables
 $clearpassword=""
 $LicenseCode="TENANTNAME:LICENSE NAME" # get-msoluser -userprincipalname "LicensedUserUPN" | SELECT-object Licenses
