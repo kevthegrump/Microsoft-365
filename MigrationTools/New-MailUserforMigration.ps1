@@ -6,15 +6,15 @@ $clearpassword=""
 $LicenseCode="TENANTNAME:LICENSE NAME" # get-msoluser -userprincipalname "LicensedUserUPN" | SELECT-object Licenses
 $usagelocation="GB" #Country code for license usage
 #Details from source mailbox object (i.e. get-recipient "NAME" | select name, archiveguid, exchangeguid, legacyexchangeDN)
-$ExchangeGUID="07251464-0bcf-4902-939b-74e0339b8cb5"
-$ArchiveGUID="f0aa67e4-790d-4e86-a994-eae1ea289ac6"
-$LegacyExchangeDN="/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=3af4c711b2e54c59906793aa24f6af40-AlexW"
+$ExchangeGUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+$ArchiveGUID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+$LegacyExchangeDN="/o=ExchangeLabs/ou=Exchange Administrative Group (XXXXXXXX)/cn=Recipients/cn=xxxxxxxxxxxx-aaaB"
 
 $arguments= @{
-firstname="Alex"
-lastname="Wilber"
-externalemailaddress="alexw@wunderlab.uk"
-primarysmtpaddress="alexw@m365x1337.onmicrosoft.com"
+firstname="Firstname"
+lastname="LastName"
+externalemailaddress="sourceemail"
+primarysmtpaddress="temp_email@tenant.onmicrosoft.com"
 }
 
 try {
